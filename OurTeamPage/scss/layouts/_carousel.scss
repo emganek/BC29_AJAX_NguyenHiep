@@ -1,0 +1,31 @@
+#carousel{
+    position: relative;
+    padding-bottom: 11rem;
+
+    .carousel-text{
+        h6{
+            @include styleText($fs-2, $color-purple, $fw-2);
+            @media screen and (max-width:767px) {
+                @include styleText($fs-1, $color-purple, $fw-2);
+            }
+        }
+        h1{
+            @include styleText(3.8rem, $color-black, $fw-3);
+
+            @media screen and (max-width:767px) {
+                @include styleText(2.5rem, $color-black, $fw-3);
+            }
+        }
+    }
+
+    .carousel-background-img{
+        position:absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        
+        img{
+            width: 100%;
+        }
+    }
+}

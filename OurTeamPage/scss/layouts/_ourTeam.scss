@@ -1,0 +1,56 @@
+#ourTeam {
+    background-color: #dcd1f3;
+    position: relative;
+
+    .ourTeam-item {
+        .card {
+            border-radius: $fs-1;
+            transition: all .1s;
+            overflow: hidden;
+            
+            .ourTeam-item-image{
+                overflow: hidden;
+                
+                .card-img-top {
+                    border-radius: $fs-1 $fs-1 0px 0px;
+                    transform: scale3d(1,1,1);
+                    transition: all .5s;
+                    overflow: hidden;
+    
+                    &:hover{
+                        transform: scale3d(1.05,1.05,1.05);
+                    }
+                }    
+            }
+
+            .card-body {
+                h6 {
+                    @include styleText(12px, $color-purple, $fw-3)
+                }
+
+                h4 {
+                    @include styleText($fs-5, $color-black, $fw-3)
+                }
+
+                p {
+                    @include styleText($fs-1, $color-black, $fw-1)
+                }
+            }
+
+            &:hover {
+                box-shadow: 0 30px 30px -10px $color-shadow-1;
+            }
+        }
+    }
+
+    .ourTeam-background-img{
+        position: absolute;
+        bottom:0px;
+        left: 0px;
+        right:0px;
+
+        img{
+            width:100%;
+        }
+    }
+}
